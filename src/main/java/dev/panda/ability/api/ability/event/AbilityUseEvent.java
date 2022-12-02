@@ -1,0 +1,31 @@
+package dev.panda.ability.api.ability.event;
+
+import dev.panda.ability.api.ability.IAbility;
+import org.bukkit.entity.Player;
+
+/**
+ * @author UKry
+ * Created: 24/11/2022
+ * Project PandaAbility
+ **/
+
+public class AbilityUseEvent extends AbilityEvent {
+
+    protected final IAbility ability;
+
+    /**
+     * @param player The player who used the ability
+     * @param ability The ability that was used
+     */
+    public AbilityUseEvent(Player player, IAbility ability) {
+        super(player);
+        this.ability = ability;
+    }
+
+    /**
+     * @return The ability used
+     */
+    public IAbility getAbility() {
+        return ability;
+    }
+}
