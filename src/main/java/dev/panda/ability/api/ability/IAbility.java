@@ -111,7 +111,6 @@ public abstract class IAbility implements Listener {
         return aLore.equals(lore);
     }
 
-
     /**
      * If the item works with uses, check the remaining uses of the item
      * @param player The player you want to verify
@@ -125,7 +124,6 @@ public abstract class IAbility implements Listener {
             player.updateInventory();
         } else setUses(player, currentUses);
     }
-
 
     /**
      * Gets the uses of the item the player owns

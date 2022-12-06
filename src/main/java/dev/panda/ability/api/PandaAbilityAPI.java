@@ -10,6 +10,25 @@ import java.util.function.Predicate;
 public class PandaAbilityAPI {
 
     /**
+     * This method is used to remove the cooldown of a specific ability on a player.
+     *
+     * @param player The player from whom you want to remove the cooldown
+     * @param ability The ability from which you want to remove the cooldown
+     */
+    public static void removeCooldown(Player player, IAbility ability) {
+        throw new RuntimeException("API no is initialized!");
+    }
+
+    /**
+     * This method is used to remove the global cooldown of a specify player
+     *
+     * @param player The player from whom you want to remove the cooldown
+     */
+    public static void removeGlobalCooldown(Player player) {
+        throw new RuntimeException("API no is initialized!");
+    }
+
+    /**
      * This method is used to register a conditional to all abilities
      *
      * @param name Id of the conditional
